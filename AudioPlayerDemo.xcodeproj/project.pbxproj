@@ -17,6 +17,12 @@
 		C5099DDD2632B05400ED0BE7 /* AudioPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5099DDC2632B05400ED0BE7 /* AudioPlayerDemoTests.m */; };
 		C5099DE82632B05400ED0BE7 /* AudioPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5099DE72632B05400ED0BE7 /* AudioPlayerDemoUITests.m */; };
 		C5099DFF2632B37D00ED0BE7 /* UIView+LCFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C5099DFE2632B37D00ED0BE7 /* UIView+LCFrame.m */; };
+		C55C2B1C2637EF980035A9FE /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55C2B1B2637EF980035A9FE /* CameraView.m */; };
+		C55C2B1F2637EFB30035A9FE /* CameraPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = C55C2B1E2637EFB30035A9FE /* CameraPreview.m */; };
+		C55C2B222637EFCB0035A9FE /* CameraOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55C2B212637EFCB0035A9FE /* CameraOverlayView.m */; };
+		C5AB728D26369ADA00AA3929 /* NSFileManager+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AB728A26369ADA00AA3929 /* NSFileManager+Additions.m */; };
+		C5AB728E26369ADA00AA3929 /* NSTimer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AB728C26369ADA00AA3929 /* NSTimer+Additions.m */; };
+		C5B4CC2926354590004AF01F /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B4CC2826354590004AF01F /* CameraManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,18 @@
 		C5099DE92632B05400ED0BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5099DFD2632B37D00ED0BE7 /* UIView+LCFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LCFrame.h"; sourceTree = "<group>"; };
 		C5099DFE2632B37D00ED0BE7 /* UIView+LCFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCFrame.m"; sourceTree = "<group>"; };
+		C55C2B1A2637EF980035A9FE /* CameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
+		C55C2B1B2637EF980035A9FE /* CameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
+		C55C2B1D2637EFB30035A9FE /* CameraPreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraPreview.h; sourceTree = "<group>"; };
+		C55C2B1E2637EFB30035A9FE /* CameraPreview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraPreview.m; sourceTree = "<group>"; };
+		C55C2B202637EFCB0035A9FE /* CameraOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraOverlayView.h; sourceTree = "<group>"; };
+		C55C2B212637EFCB0035A9FE /* CameraOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraOverlayView.m; sourceTree = "<group>"; };
+		C5AB728926369ADA00AA3929 /* NSTimer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Additions.h"; sourceTree = "<group>"; };
+		C5AB728A26369ADA00AA3929 /* NSFileManager+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Additions.m"; sourceTree = "<group>"; };
+		C5AB728B26369ADA00AA3929 /* NSFileManager+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Additions.h"; sourceTree = "<group>"; };
+		C5AB728C26369ADA00AA3929 /* NSTimer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Additions.m"; sourceTree = "<group>"; };
+		C5B4CC2726354590004AF01F /* CameraManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		C5B4CC2826354590004AF01F /* CameraManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +125,8 @@
 		C5099DBF2632B05100ED0BE7 /* AudioPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C55C2B192637EF4F0035A9FE /* Views */,
+				C5B4CC2626354557004AF01F /* Camera */,
 				C5099DFC2632B32C00ED0BE7 /* Categories */,
 				C5099DC02632B05100ED0BE7 /* AppDelegate.h */,
 				C5099DC12632B05100ED0BE7 /* AppDelegate.m */,
@@ -144,10 +164,36 @@
 		C5099DFC2632B32C00ED0BE7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				C5AB728B26369ADA00AA3929 /* NSFileManager+Additions.h */,
+				C5AB728A26369ADA00AA3929 /* NSFileManager+Additions.m */,
+				C5AB728926369ADA00AA3929 /* NSTimer+Additions.h */,
+				C5AB728C26369ADA00AA3929 /* NSTimer+Additions.m */,
 				C5099DFD2632B37D00ED0BE7 /* UIView+LCFrame.h */,
 				C5099DFE2632B37D00ED0BE7 /* UIView+LCFrame.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		C55C2B192637EF4F0035A9FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C55C2B1A2637EF980035A9FE /* CameraView.h */,
+				C55C2B1B2637EF980035A9FE /* CameraView.m */,
+				C55C2B1D2637EFB30035A9FE /* CameraPreview.h */,
+				C55C2B1E2637EFB30035A9FE /* CameraPreview.m */,
+				C55C2B202637EFCB0035A9FE /* CameraOverlayView.h */,
+				C55C2B212637EFCB0035A9FE /* CameraOverlayView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5B4CC2626354557004AF01F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C5B4CC2726354590004AF01F /* CameraManager.h */,
+				C5B4CC2826354590004AF01F /* CameraManager.m */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,11 +325,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AB728D26369ADA00AA3929 /* NSFileManager+Additions.m in Sources */,
 				C5099DFF2632B37D00ED0BE7 /* UIView+LCFrame.m in Sources */,
+				C5AB728E26369ADA00AA3929 /* NSTimer+Additions.m in Sources */,
+				C55C2B222637EFCB0035A9FE /* CameraOverlayView.m in Sources */,
 				C5099DC82632B05100ED0BE7 /* ViewController.m in Sources */,
 				C5099DC22632B05100ED0BE7 /* AppDelegate.m in Sources */,
 				C5099DD32632B05300ED0BE7 /* main.m in Sources */,
+				C5B4CC2926354590004AF01F /* CameraManager.m in Sources */,
+				C55C2B1F2637EFB30035A9FE /* CameraPreview.m in Sources */,
 				C5099DC52632B05100ED0BE7 /* SceneDelegate.m in Sources */,
+				C55C2B1C2637EF980035A9FE /* CameraView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -442,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
