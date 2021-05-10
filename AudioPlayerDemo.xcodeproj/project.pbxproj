@@ -17,6 +17,10 @@
 		C5099DDD2632B05400ED0BE7 /* AudioPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5099DDC2632B05400ED0BE7 /* AudioPlayerDemoTests.m */; };
 		C5099DE82632B05400ED0BE7 /* AudioPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5099DE72632B05400ED0BE7 /* AudioPlayerDemoUITests.m */; };
 		C5099DFF2632B37D00ED0BE7 /* UIView+LCFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C5099DFE2632B37D00ED0BE7 /* UIView+LCFrame.m */; };
+		C5598D932643F7EB00283299 /* CameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5598D922643F7EB00283299 /* CameraButton.m */; };
+		C5598D962644ED2400283299 /* FlashControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C5598D952644ED2400283299 /* FlashControl.m */; };
+		C5598D992645331500283299 /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5598D982645331500283299 /* StatusView.m */; };
+		C5598D9C2645334A00283299 /* CameraModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5598D9B2645334A00283299 /* CameraModeView.m */; };
 		C55C2B1C2637EF980035A9FE /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55C2B1B2637EF980035A9FE /* CameraView.m */; };
 		C55C2B1F2637EFB30035A9FE /* CameraPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = C55C2B1E2637EFB30035A9FE /* CameraPreview.m */; };
 		C55C2B222637EFCB0035A9FE /* CameraOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55C2B212637EFCB0035A9FE /* CameraOverlayView.m */; };
@@ -63,6 +67,14 @@
 		C5099DE92632B05400ED0BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5099DFD2632B37D00ED0BE7 /* UIView+LCFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LCFrame.h"; sourceTree = "<group>"; };
 		C5099DFE2632B37D00ED0BE7 /* UIView+LCFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCFrame.m"; sourceTree = "<group>"; };
+		C5598D912643F7EB00283299 /* CameraButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraButton.h; sourceTree = "<group>"; };
+		C5598D922643F7EB00283299 /* CameraButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraButton.m; sourceTree = "<group>"; };
+		C5598D942644ED2400283299 /* FlashControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashControl.h; sourceTree = "<group>"; };
+		C5598D952644ED2400283299 /* FlashControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashControl.m; sourceTree = "<group>"; };
+		C5598D972645331500283299 /* StatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusView.h; sourceTree = "<group>"; };
+		C5598D982645331500283299 /* StatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusView.m; sourceTree = "<group>"; };
+		C5598D9A2645334A00283299 /* CameraModeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraModeView.h; sourceTree = "<group>"; };
+		C5598D9B2645334A00283299 /* CameraModeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraModeView.m; sourceTree = "<group>"; };
 		C55C2B1A2637EF980035A9FE /* CameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
 		C55C2B1B2637EF980035A9FE /* CameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
 		C55C2B1D2637EFB30035A9FE /* CameraPreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraPreview.h; sourceTree = "<group>"; };
@@ -126,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				C55C2B192637EF4F0035A9FE /* Views */,
-				C5B4CC2626354557004AF01F /* Camera */,
 				C5099DFC2632B32C00ED0BE7 /* Categories */,
 				C5099DC02632B05100ED0BE7 /* AppDelegate.h */,
 				C5099DC12632B05100ED0BE7 /* AppDelegate.m */,
@@ -177,12 +188,21 @@
 		C55C2B192637EF4F0035A9FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C55C2B1A2637EF980035A9FE /* CameraView.h */,
-				C55C2B1B2637EF980035A9FE /* CameraView.m */,
+				C5598D912643F7EB00283299 /* CameraButton.h */,
+				C5598D922643F7EB00283299 /* CameraButton.m */,
+				C5598D942644ED2400283299 /* FlashControl.h */,
+				C5598D952644ED2400283299 /* FlashControl.m */,
+				C5598D9A2645334A00283299 /* CameraModeView.h */,
+				C5598D9B2645334A00283299 /* CameraModeView.m */,
+				C5598D972645331500283299 /* StatusView.h */,
+				C5598D982645331500283299 /* StatusView.m */,
 				C55C2B1D2637EFB30035A9FE /* CameraPreview.h */,
 				C55C2B1E2637EFB30035A9FE /* CameraPreview.m */,
+				C55C2B1A2637EF980035A9FE /* CameraView.h */,
+				C55C2B1B2637EF980035A9FE /* CameraView.m */,
 				C55C2B202637EFCB0035A9FE /* CameraOverlayView.h */,
 				C55C2B212637EFCB0035A9FE /* CameraOverlayView.m */,
+				C5B4CC2626354557004AF01F /* Camera */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,10 +351,14 @@
 				C55C2B222637EFCB0035A9FE /* CameraOverlayView.m in Sources */,
 				C5099DC82632B05100ED0BE7 /* ViewController.m in Sources */,
 				C5099DC22632B05100ED0BE7 /* AppDelegate.m in Sources */,
+				C5598D992645331500283299 /* StatusView.m in Sources */,
 				C5099DD32632B05300ED0BE7 /* main.m in Sources */,
 				C5B4CC2926354590004AF01F /* CameraManager.m in Sources */,
+				C5598D962644ED2400283299 /* FlashControl.m in Sources */,
 				C55C2B1F2637EFB30035A9FE /* CameraPreview.m in Sources */,
+				C5598D9C2645334A00283299 /* CameraModeView.m in Sources */,
 				C5099DC52632B05100ED0BE7 /* SceneDelegate.m in Sources */,
+				C5598D932643F7EB00283299 /* CameraButton.m in Sources */,
 				C55C2B1C2637EF980035A9FE /* CameraView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,15 +531,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhibin Xu (62296DJ24N)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DB3H2942PY;
 				INFOPLIST_FILE = AudioPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chao.AudioPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.mujipassport.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = mujipassportTest;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -525,15 +551,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhibin Xu (62296DJ24N)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DB3H2942PY;
 				INFOPLIST_FILE = AudioPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chao.AudioPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.mujipassport.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = mujipassportTest;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -29,6 +29,11 @@
 
 - (void)setupUI {
     
+    self.previewView = [[CameraPreview alloc] initWithFrame:CGRectMake(0, 44.0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 44.0 - 34.0)];
+    [self addSubview:self.previewView];
+    
+    self.overlayView = [[CameraOverlayView alloc] initWithFrame:CGRectMake(0, 44.0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 44.0 - 34.0)];
+    [self addSubview:self.overlayView];
 }
 
 @end
